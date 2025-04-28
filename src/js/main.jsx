@@ -7,12 +7,19 @@ import "bootstrap"
 
 // index.css'
 import '../styles/index.css'
-
+import '@fortawesome/fontawesome-free/css/all.min.css';
 // components
 import Home from './components/Home';
+ 
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <Home/>
-  </React.StrictMode>,
-)
+const root = ReactDOM.createRoot(document.getElementById('root'));
+ 
+let seconds = 0;
+
+
+setInterval(() => {
+  root.render(
+    <Home seconds={seconds} />
+  );
+  seconds++;
+}, 1000);

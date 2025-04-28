@@ -9,3 +9,41 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.app {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.box {
+    background-color: white;
+    color: green;
+    font-size: 60px;
+    border-radius: 10px;
+    min-width: 60px;
+    text-align: center;
+    box-shadow: 0 0 10px #0f0, 0 0 20px #0f0;
+}
+
+.icon {
+    background: none !important;;
+    box-shadow: none !important;;
+    font-size: 60px;
+    color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+}
